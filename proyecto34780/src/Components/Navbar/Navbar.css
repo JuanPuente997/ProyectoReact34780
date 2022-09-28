@@ -1,0 +1,20 @@
+.Navbar{
+    background-color:whitesmoke;
+    height: 80px;
+}
+
+.Title{
+    display:flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    justify-content: start;
+
+}
+.BoxButtons{
+    display:flex;
+    justify-content:space-evenly
+}
+
+.Button{
+    border-radius: 10px;
+}

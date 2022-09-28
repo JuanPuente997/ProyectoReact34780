@@ -1,0 +1,107 @@
+
+npx create-react-app nombredelproyecto
+
+si creo un componente en un archivo js 
+export default nombreDelArchivojs
+
+en App.js
+import nombreDelArchivojs from './nombreDeLaCarpeta'
+
+para agregar estilos a ese componente creado con js
+importo al archivo js el link del archivo css
+import'./nombreDelArchivo.css'
+
+Datos prmitivos
+Hay 6 tipos de datos primitivos: string, number, bigint, boolean, undefined y symbol.
+
+
+
+                operador ternario
+const condition = true
+let result
+result = condition? 'correcto' : 'incorrecto'
+console.log('el resultado es: ' + result 
+
+
+                spread operator
+...array
+const nums = [1,2,3,4]
+const nums2 =[...nums,5] 
+
+nums2 obtiene los mismos valores que el primer array pero
+es modificado sin afectar al primer array
+
+const persona = {
+    name:'carlos',
+    age: 30,
+    prhone:'1234'
+}
+
+const persona2 = {
+...persona,
+name:'pepe',     <- piso el valor y mantengo el resto
+}
+-----------------------------------------------------
+const persona2 = {
+    age: persona.age <- paso solo el valor de la edad
+}
+------------------------------------------------------
+const {name} = persona <- extraigo un solo valor de la constante 
+------------------------------------------------------
+const {name:name2} = persona2 <- desestructuro el valor de una propiedad con el mismo nombre que el de otra constante asignandole otro nombre
+-------------------------------------------------------
+                        "eliminar" propiedad
+const empleado = {
+    name: 'carlos',
+    age: 30,
+    position: 'albañil'
+}
+const {position: propiedadEliminada, ...restoDePropiedades}= empleado
+
+console.log(restoDePropiedades) <- se va a consologuear el nombre y la edad y la position se almacena en una "variable" que nunca se muestra. esto tambien seria desestruturacion 
+-----------------------------------------------------------
+                        eliminar de forma dinamica
+const key = 'position' <- selecciono de forma dinamica la propiedad a eliminar
+
+const{[key]:propiedadEliminada, ...restoDePropiedades}= empleado
+console.log(propiedadEliminada) <- la position se 'elimina'
+console.log(restoDePropiedades) <- aca se guarda el resto de valores
+
+ 
+
+            (retrocompatibilidad) Polyfills
+un bloque de codigo que le agrega funcionalidad a mi entorno de ejecucion 
+
+const num = 9
+const num2 = 29
+
+number.prototype.multiplicar = function (numero){
+    let acumulador = 0
+    for (let i = 0; i < numero; i++){
+        acumulador += this         <-  (hace referencia a num y num2)
+    }
+    return acumulador
+}
+
+const result = num.multiplicar(8)
+const result2 = num2.multiplicar(10)
+console.log(result)
+console.log(result2)
+
+
+                    JSX
+<div className= "active"> sdad</div>
+
+React.createElement ('div,{className:'active'}'sdad')
+ 
+
+                ESTILOS EN JSX
+let styles = {
+    borderColor: '#999'
+}
+const jsx = (
+    <div syle={styles}>
+    sdad
+    <div>
+)
+-----------------------------------------------
