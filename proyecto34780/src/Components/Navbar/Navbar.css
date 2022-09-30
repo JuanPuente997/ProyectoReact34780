@@ -1,20 +1,17 @@
 .Navbar{
     background-color:whitesmoke;
-    height: 80px;
+    height: 70px;
 }
 
-.Title{
-    display:flex;
-    margin-top: 0;
-    margin-bottom: 0;
-    justify-content: start;
-
-}
 .BoxButtons{
-    display:flex;
-    justify-content:space-evenly
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content:space-around;   
+   padding-top: 8px; 
 }
 
 .Button{
     border-radius: 10px;
+
 }
