@@ -8,7 +8,7 @@
    flex-direction: row;
    align-items: center;
    justify-content:space-around;   
-   padding-top: 8px; 
+   padding: 10px; 
 }
 
 .Button{
