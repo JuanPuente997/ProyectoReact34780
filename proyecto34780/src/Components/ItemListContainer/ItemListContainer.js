@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
-import { getProducts } from "../../asyncMonck";
-import ItemList from "../ItemList/ItemList";
+import { useEffect, useState } from "react"
+import { getProducts } from "../../asyncMonck"
+import ItemList from "../ItemList/ItemList"
 
-const ItemListContainer = () => {
+const ItemListContainer = ({greeting}) => {
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(true)
     
@@ -15,19 +15,14 @@ const ItemListContainer = () => {
     }, [])
     
     if(loading){
-        return <div class="d-flex justify-content-center">
-        <div class="spinner-border" role="status">
-        <span class="sr-only">Loading...</span>
-        </div>
-        </div>
+        return <h1>Loading...</h1>
     }
     return (
-  
     <div>
-        <h1>Productos</h1>
+        <h1>{greeting}</h1>
+        <h3>Comestibles</h3>
         <ItemList products={products}/>
     </div>
-   
     )
 }
 export default ItemListContainer

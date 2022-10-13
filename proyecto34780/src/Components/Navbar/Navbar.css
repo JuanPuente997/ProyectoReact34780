@@ -1,7 +1,6 @@
 .Navbar{
-    background-color:white;
-    height: 100px;
-    margin-bottom: 3rem;
+    background-color:whitesmoke;
+    height: 70px;
 }
 
 .BoxButtons{
@@ -9,12 +8,10 @@
    flex-direction: row;
    align-items: center;
    justify-content:space-around;   
-   padding: 10px;
-   padding-top: 1.5rem; 
-
-   
+   padding: 10px; 
 }
 
 .Button{
     border-radius: 10px;
+
 }

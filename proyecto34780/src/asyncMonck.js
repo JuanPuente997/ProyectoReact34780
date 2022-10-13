@@ -4,30 +4,27 @@ const products=[
         name:'Producto 1',
         price:'$500',
         category:'Alimentos',
-        img: '/imagenes/NootbookCoreI9.jpg',
+        img: 'img',
         stock:'3',
-        description:'Comestible',
-        detail:'Detalle del producto'
+        description:'Comestible'
     },
     {
         id:'2',
         name:'Producto 2',
         price:'$800',
         category:'Alimentos',
-        img:'/imagenes/samsungGalaxiA23.png',
+        img:'img',
         stock:'5',
-        description:'Comestible',
-        detail:'Detalle del producto'
+        description:'Comestible'
     },
     {
         id:'3',
         name:'Producto 3',
         price:'$900',
         category:'Alimentos',
-        img:'/imagenes/tablet.png',
+        img:'',
         stock:'9',
-        description:'Comestible',
-        detail:'Detalle del producto'
+        description:'Comestible'
     }
 ]
 export const getProducts = () =>{
@@ -35,12 +32,5 @@ export const getProducts = () =>{
         setTimeout(() => {
             resolve(products)
         },1000)
-    })
-}
-export const getProductsById = (id) => {
-    return new Promise ((resolve) => {
-        setTimeout(()=>{
-            resolve(products.map (prod => prod.id === id))
-        },2000)
     })
 }
