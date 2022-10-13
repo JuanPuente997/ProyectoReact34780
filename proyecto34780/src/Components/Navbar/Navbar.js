@@ -5,10 +5,10 @@ const Navbar = ()=>{
     return(
         <nav className = 'Navbar'>
              <div className='BoxButtons'>
-             <div><h3>E-commerce</h3></div>
-                <button className ='Button'>Inicio</button>
-                <button className ='Button'>Productos</button>
-                <button className ='Button'>Contacto</button>
+                <h3>E-commerce</h3>
+                <button className ='Button'>Celulares</button>
+                <button className ='Button'>Tablets</button>
+                <button className ='Button'>Notbooks</button>
                 <div>
                     <CartWidget/>
                 </div>

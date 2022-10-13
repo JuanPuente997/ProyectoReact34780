@@ -1,12 +1,6 @@
-
-const Item =(img, name, category,price)=>{
+const Item = () =>{
     return(
-        <div>
-            <img src={img} alt={name}/>
-            <h1>{name}</h1>
-            <h3>{category}</h3>
-            <p>{price}</p>
-        </div>
+        <h1>Item</h1>
     )
 }
 export default Item

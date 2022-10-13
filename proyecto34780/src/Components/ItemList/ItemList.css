@@ -1,0 +1,8 @@
+.ItemList{
+    display: flex;
+    justify-content: space-evenly;
+    width:80rem ;
+    margin: auto;
+    margin-top: 3rem;
+   
+}
