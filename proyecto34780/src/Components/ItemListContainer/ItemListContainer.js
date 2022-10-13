@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { getProducts } from "../../asyncMonck"
 import ItemList from "../ItemList/ItemList"
 
-const ItemListContainer = ({greeting}) => {
+const ItemListContainer = () => {
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(true)
     
@@ -19,8 +19,6 @@ const ItemListContainer = ({greeting}) => {
     }
     return (
     <div>
-        <h1>{greeting}</h1>
-        <h3>Comestibles</h3>
         <ItemList products={products}/>
     </div>
     )
