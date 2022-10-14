@@ -1,18 +1,26 @@
 import { useEffect, useState } from "react"
-import { getProducts } from "../../asyncMonck"
+import { getProducts,getProductsByCategory } from "../../asyncMonck"
+import { useParams } from 'react-router-dom'
 import ItemList from "../ItemList/ItemList"
 
 const ItemListContainer = () => {
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(true)
-    
+    const { categoryId } = useParams()
+  
     useEffect(() => {
-        getProducts().then(response => {
+        setLoading(true)
+
+        const asyncFunction = categoryId ? getProductsByCategory : getProducts
+    
+        asyncFunction(categoryId).then(response => {
             setProducts(response)
+        }).catch(error => {
+            console.log(error)
         }).finally(() => {
             setLoading(false)
-        })
-    }, [])
+        })  
+    }, [categoryId])
     
     if(loading){
         return <h1>Loading...</h1>
