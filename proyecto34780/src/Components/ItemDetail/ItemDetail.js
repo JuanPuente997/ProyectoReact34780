@@ -1,3 +1,6 @@
+import Counter from'../Counter/Counter'
+
+
 const ItemDetail = ({name, price,category, stock, description}) =>{
         return(
         <div>
@@ -6,6 +9,7 @@ const ItemDetail = ({name, price,category, stock, description}) =>{
             <p>{category}</p>
             <p>{stock}</p>
             <p>{description}</p>
+            <Counter/>
         </div>
         )
 }
