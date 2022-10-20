@@ -7,7 +7,7 @@ const products=[
         category:'Tablets',
         img: '/imagenes/tablet.webp',
         stock:'3',
-        description:'Comestible'
+        description:'Tablet generica de calidad media'
     },
     {
         id:'2',
@@ -16,7 +16,7 @@ const products=[
         category:'Notebooks',
         img:'/imagenes/notebook.jpg',
         stock:'5',
-        description:'Comestible'
+        description:'Una notebook mas pero fachera facherita'
     },
     {
         id:'3',
@@ -25,7 +25,7 @@ const products=[
         category:'Celulares',
         img:'/imagenes/samsung.png',
         stock:'9',
-        description:'Comestible'
+        description:'El celu que siempre quisiste y nunca tuviste'
     }
 ]
 export const getProducts = () =>{

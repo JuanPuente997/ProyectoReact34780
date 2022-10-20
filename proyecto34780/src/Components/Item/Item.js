@@ -1,24 +1,16 @@
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom"
 
-const Item = ({ id, img, name, category, price }) => {
+
+const Item = ({img, name,category, price }) => {
     return (
-    <div className="contenedorLista">
-
-        <div className="cardContainer">
-            <div className="imageCard">
-                <img src={img} alt="" />
-            </div>
-            <div className="detailsCard">
+            <div>
+                <img src={img} alt="img" />
                 <h5>{name}</h5>
-            </div>
-            <div className="price">
-                <h5>${price}</h5>
-            </div>
-            <div className="link">
-                <Link to = {`/detail/${id}`}>Ver detalle</Link>
-            </div>
-        </div>
-    
-    </div>
+                <h5>{category}</h5>
+                <h5>{price}</h5>
+                <footer>
+                <Link to='/detail'><h4>Ver detalle</h4></Link>
+                </footer>
+            </div>   
 )}
 export default Item
