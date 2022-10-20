@@ -6,7 +6,7 @@ const ItemDetail = ({name, img, price,category, stock, description}) =>{
         return(
         <div>
             <h2>{name}</h2>
-            <picture>src={img} alt={}name</picture>
+            <img>src={img} alt={name}</img>
             <p>{price}</p>
             <p>{category}</p>
             <p>{stock}</p>

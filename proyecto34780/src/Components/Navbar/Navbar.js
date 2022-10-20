@@ -9,9 +9,9 @@ const Navbar = ()=>{
              <div><h3>E-commerce</h3></div>
             
                 <Link to = {'/'}>Inicio</Link>
-                <Link to ={'/category/celulares'}>celulares</Link>
-                <Link to ={'/category/tablets'}>Tablets</Link>
-                <Link to ={'/category/notebook'}>Notbook</Link>
+                <Link to ={'/category/: Celulares'}>celulares</Link>
+                <Link to ={'/category/: Tablets'}>Tablets</Link>
+                <Link to ={'/category/: Notebook'}>Notbook</Link>
                 <div>
                     <CartWidget/>
                 </div>
