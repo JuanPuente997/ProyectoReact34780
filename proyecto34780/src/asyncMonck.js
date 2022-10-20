@@ -3,7 +3,7 @@ const products=[
     {
         id:'1',
         name:'Tablet',
-        price:'$500',
+        price: '$500',
         category:'Tablets',
         img: '/imagenes/tablet.webp',
         stock:'3',
@@ -12,7 +12,7 @@ const products=[
     {
         id:'2',
         name:'Notebook',
-        price:'$800',
+        price: '$800',
         category:'Notebooks',
         img:'/imagenes/notebook.jpg',
         stock:'5',
@@ -21,7 +21,7 @@ const products=[
     {
         id:'3',
         name:'Celular',
-        price:'$900',
+        price: '$900',
         category:'Celulares',
         img:'/imagenes/samsung.png',
         stock:'9',

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 
 
+
 const Item = ({img, name,category, price }) => {
     return (
             <div>
@@ -9,7 +10,7 @@ const Item = ({img, name,category, price }) => {
                 <h5>{category}</h5>
                 <h5>{price}</h5>
                 <footer>
-                <Link to={'/detail'}><h4>Ver detalle</h4></Link>
+                <Link to={'/detail'}><h4>Detalle</h4></Link>
                 </footer>
             </div>   
 )}

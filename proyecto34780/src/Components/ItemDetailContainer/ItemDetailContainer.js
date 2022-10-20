@@ -24,7 +24,7 @@ const ItemDetailContainer = () => {
     }
     return (
         <>
-        <h1>detalle</h1>
+        <h1>Detalle</h1>
        <ItemDetail key= {products.id}{...products}/>
         </>
     )
