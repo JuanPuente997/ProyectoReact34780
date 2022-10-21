@@ -9,7 +9,8 @@ const ItemList = ({products, setPage})=>{
              img={prod.img} 
              name={prod.name}
              price ={prod.price}
-             setPage={setPage}/>)}
+             setPage={setPage}
+             id={prod.id}/>)}
         </div>
     )
 }

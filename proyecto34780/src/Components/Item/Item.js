@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 
 
-const Item = ({img, name,category, price }) => {
+const Item = ({img, name,category, price, id}) => {
     return (
             <div>
                 <img src={img} alt="img" />
@@ -10,7 +10,7 @@ const Item = ({img, name,category, price }) => {
                 <h5>{category}</h5>
                 <h5>{price}</h5>
                 <footer>
-                <Link to={'/detail'}><h4>Detalle</h4></Link>
+                <Link to={`/detail/${id}`}><h4>Detalle</h4></Link>
                 </footer>
             </div>   
 )}

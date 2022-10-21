@@ -3,7 +3,7 @@ import { getProducts,getProductsByCategory } from "../../asyncMonck"
 import { useParams } from 'react-router-dom'
 import ItemList from "../ItemList/ItemList"
 
-const ItemListContainer = () => {
+const ItemListContainer = ({}) => {
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(true)
     const { categoryId } = useParams()
